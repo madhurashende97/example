@@ -1,0 +1,26 @@
+div{
+    margin-left: 55px;
+    margin-top: 55px;
+    box-sizing: border-box;
+    border-width: 2mm;
+    border-style: solid;
+    border-radius: 2.5mm;
+    border-image: linear-gradient(15deg,gray,blue)1;
+}
+h3{
+    text-align: center;
+    text-emphasis-color: gray;
+}
+p{
+ text-align: center;
+}
+button {
+    background-color: white; 
+    border: none;
+    color: black;
+    padding: 50px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
