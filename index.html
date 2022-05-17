@@ -1,77 +1,46 @@
-<html>
-    <style>
-        .weatherText {
-            font-family: "Lato", "sans-serif";
-            font-size: 24px;
-            text-align: center;
-        }
+<!DOCTYPE html>
+<html lang="en">
 
-        #weatherForm {
-            padding: 20px;
-        }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="style.css">
+  <title>Node example</title>
+</head>
 
-        #weatherSubmit {
-            color: white;
-            background-color: #083375;
-            padding: 5px 20px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        #weatherSubmit:hover {
-            cursor: pointer;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .card {
-            border: 2px solid black;
-            width: 50%;
-
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-    <head>
-        <title class="alignct">Post Office Finder</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <h1 id="error_head" style="display: none" value="{{error}}">
-            {{error}}
-        </h1>
-        <div class="card">
-            <h2 class="weatherText">Post Office Finder Using WebApp</h2>
-
-            <form class="weatherText" id="weatherForm" action="/" method="post">
-                Location Zip Code:
-                <input
-                    class="weatherText"
-                    id="weatherInput"
-                    type="text"
-                    name="zipCode"
-                /><br />
-                <input
-                    class="weatherText"
-                    id="weatherSubmit"
-                    type="submit"
-                    value="Submit"
-                />
-            </form>
+<body>
+  <div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+      <h2>Sign Up</h2>
+      <p>Please fill in this form to create an account!</p>
+      <hr />
+      <div class="form-group">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required" />
+          </div><br>
+          <div class="col">
+            <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required" />
+          </div>
         </div>
-        <script>
-            let err = document.getElementById("error_head");
-            function myFunction() {
-                alert("Enter Valid Pin Code");
-            }
-            if (err) {
-                myFunction();
-            }
-        </script>
-    </body>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" name="Username" placeholder="Username" required="required" />
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required" />
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password"
+          required="required" />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+      </div>
+    </form>
+  </div>
+</body>
+
 </html>
